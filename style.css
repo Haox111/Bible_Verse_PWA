@@ -25,6 +25,19 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+/* ── Desktop: center in a phone-width column ── */
+#app-shell {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  width: 100%;
+  max-width: 480px;
+  margin: 0 auto;
+  min-height: 100vh;
+  background: var(--bg);
+  box-shadow: 0 0 40px rgba(139,94,60,0.10);
+}
+
 /* ── Header ── */
 header {
   text-align: center;
@@ -47,6 +60,9 @@ main {
   flex: 1;
   padding: 12px 16px 8px;
   overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 /* ── Card ── */
