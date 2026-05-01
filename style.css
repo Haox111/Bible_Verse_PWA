@@ -18,14 +18,14 @@ body {
   font-family: Georgia, 'Times New Roman', serif;
   background: var(--bg);
   color: var(--text);
-  display: flex;
-  flex-direction: column;
-  height: 100dvh;           /* fills exact phone viewport, no overscroll */
+  /* position:fixed is the most reliable way to lock mobile viewport */
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
   overflow: hidden;
   -webkit-font-smoothing: antialiased;
 }
 
-/* ── Desktop: center in phone-width column ── */
+/* ── App shell fills viewport, desktop gets centered column ── */
 #app-shell {
   display: flex;
   flex-direction: column;
@@ -60,6 +60,7 @@ main {
   flex: 1;
   padding: 8px 14px 6px;
   overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
   display: flex;
   flex-direction: column;
   justify-content: center;
