@@ -44,14 +44,14 @@ header {
   flex-shrink: 0;
 }
 .app-label {
-  font-size: 13px;
+  font-size: 16px;
   letter-spacing: 4px;
   color: var(--text-muted);
   text-transform: uppercase;
   margin-bottom: 4px;
 }
 .date-label {
-  font-size: 12px;
+  font-size: 14px;
   color: var(--accent-light);
 }
 
@@ -77,15 +77,15 @@ main {
 
 /* ── Verse text ── */
 .verse-text {
-  font-size: 15px;
-  line-height: 1.8;
+  font-size: 18px;
+  line-height: 1.9;
   color: var(--text);
   text-align: center;
 }
 
 /* ── Reference ── */
 .verse-ref {
-  font-size: 11px;
+  font-size: 14px;
   color: var(--accent);
   text-align: center;
   letter-spacing: 1.5px;
@@ -214,12 +214,12 @@ main {
   #app-shell { max-width: 660px; }
 
   header { padding: 20px 24px 10px; }
-  .app-label { font-size: 14px; letter-spacing: 5px; }
-  .date-label { font-size: 13px; }
+  .app-label { font-size: 18px; letter-spacing: 5px; }
+  .date-label { font-size: 15px; }
 
   .card { padding: 28px 32px; border-radius: 18px; }
-  .verse-text { font-size: 22px; line-height: 2; }
-  .verse-ref  { font-size: 14px; margin-top: 16px; }
+  .verse-text { font-size: 26px; line-height: 2; }
+  .verse-ref  { font-size: 17px; margin-top: 16px; }
 
   .divider { margin: 18px 0 14px; }
   .email-btn { font-size: 15px; padding: 12px; border-radius: 12px; }
