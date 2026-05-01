@@ -1,4 +1,4 @@
-const CACHE = 'bible-verse-v1';
+const CACHE = 'bible-verse-v2';
 const PRECACHE = [
   './',
   './index.html',
