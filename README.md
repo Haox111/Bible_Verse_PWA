@@ -38,32 +38,27 @@
 
 ---
 
-## 本地运行
+## 安装到设备
 
-```bash
-git clone https://github.com/Haox111/Bible_Verse_PWA.git
-cd Bible_Verse_PWA
-python -m http.server 8080
-# 访问 http://localhost:8080
-```
+### 手机（iOS）
 
-直接双击 `index.html` 会因 CORS 无法加载数据，请通过本地服务器访问。
+1. 用 Safari 打开网址
+2. 点底部分享按钮（方块加箭头）
+3. 选「添加到主屏幕」
+4. 点右上角「添加」
 
----
+### 手机（Android）
 
-## EmailJS 配置
+1. 用 Chrome 打开网址
+2. 点右上角菜单（三个点）
+3. 选「添加到主屏幕」或「安装应用」
 
-1. 注册 [EmailJS](https://www.emailjs.com/)，连接 Gmail
-2. 创建模板，变量：`{{to_email}}`、`{{verse_text}}`、`{{verse_ref}}`
-3. 填入 `config.js`：
+### 电脑（Chrome）
 
-```js
-const EMAILJS_CONFIG = {
-  publicKey:  'your_public_key',
-  serviceId:  'your_service_id',
-  templateId: 'your_template_id',
-};
-```
+1. 用 Chrome 打开网址
+2. 点地址栏右侧的安装图标（电脑屏幕加箭头）
+3. 点「安装」
+4. 桌面会出现快捷方式，点击直接打开，无地址栏
 
 ---
 
