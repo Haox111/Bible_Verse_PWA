@@ -94,9 +94,9 @@ function pickFromCategory(testament) {
 
 // ── Bottom nav ────────────────────────────────────────────────────────────────
 function bindNav() {
-  document.querySelectorAll('.nav-btn').forEach(btn => {
+  document.querySelectorAll('.cat-btn').forEach(btn => {
     btn.addEventListener('click', async () => {
-      document.querySelectorAll('.nav-btn').forEach(b => b.classList.remove('active'));
+      document.querySelectorAll('.cat-btn').forEach(b => b.classList.remove('active'));
       btn.classList.add('active');
 
       const testament = btn.dataset.testament;
