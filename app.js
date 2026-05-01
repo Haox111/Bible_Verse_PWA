@@ -62,7 +62,13 @@ function pickFromCategory(testament) {
   const metaMap = Object.fromEntries(allBooks.map((m, i) => [i, m]));
   const bookPool = chiun.books
     .map((book, i) => ({ book, meta: metaMap[i] }))
-    .filter(({ meta }) => meta && (testament === 'random' || meta.testament === testament));
+    .filter(({ meta }) => {
+      if (!meta) return false;
+      if (testament === 'random') return true;
+      if (testament === 'psalms')   return meta.name_en === 'Psalms';
+      if (testament === 'proverbs') return meta.name_en === 'Proverbs';
+      return meta.testament === testament;
+    });
 
   if (!bookPool.length) { showError('該分類暫無經文。'); return; }
 
