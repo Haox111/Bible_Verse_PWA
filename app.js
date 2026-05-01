@@ -175,3 +175,25 @@ function registerSW() {
     navigator.serviceWorker.register('service-worker.js').catch(console.error);
   }
 }
+
+// ── Update button ─────────────────────────────────────────────────────────────
+document.getElementById('update-btn').addEventListener('click', async () => {
+  const btn = document.getElementById('update-btn');
+  btn.textContent = '更新中…';
+  btn.disabled = true;
+  try {
+    // Tell SW to update
+    if ('serviceWorker' in navigator) {
+      const reg = await navigator.serviceWorker.getRegistration();
+      if (reg) await reg.update();
+    }
+    // Clear all caches
+    const keys = await caches.keys();
+    await Promise.all(keys.map(k => caches.delete(k)));
+    // Reload fresh
+    location.reload(true);
+  } catch {
+    btn.textContent = '檢查更新';
+    btn.disabled = false;
+  }
+});

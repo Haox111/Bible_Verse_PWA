@@ -209,6 +209,22 @@ main {
   color: var(--text-muted);
 }
 
+/* ── Update button ── */
+.update-btn {
+  display: block;
+  margin: 12px auto 4px;
+  background: none;
+  border: none;
+  font-family: Georgia, serif;
+  font-size: 11px;
+  color: var(--text-muted);
+  cursor: pointer;
+  letter-spacing: 0.5px;
+  opacity: 0.6;
+  transition: opacity 0.15s;
+}
+.update-btn:hover { opacity: 1; }
+
 /* ── Desktop ── */
 @media (min-width: 600px) {
   #app-shell { max-width: 660px; }
