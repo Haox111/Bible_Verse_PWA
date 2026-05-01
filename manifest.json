@@ -1,0 +1,24 @@
+{
+  "name": "每日靈糧",
+  "short_name": "靈糧",
+  "description": "每日聖經經文 · Daily Bible Verse (和合本)",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#f0e6d6",
+  "theme_color": "#8b5e3c",
+  "lang": "zh-Hant",
+  "icons": [
+    {
+      "src": "icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
